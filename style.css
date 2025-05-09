@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 77, 0, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #ff4d00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #ff9900;
+}
+
+/* 3D Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background: linear-gradient(135deg, #1e293b, #374151);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Floating 3D Glow */
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(15px);
+    top: 10%;
+    left: 10%;
+    z-index: -1;
+}
+
+/* Hero Title */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 150;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 77, 0, 0.8);
+}
+
+/* Modern Button with Glow */
+.hero .btn {
+    display: inline-block;
+    background: #5A9DF5;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(90, 157, 245, 0.8);
+    transition: 0.4s ease-in-out;
+}
+
+.hero .btn:hover {
+    transform: scale(1.15);
+    background: #2374E1;
+    box-shadow: 0px 0px 25px rgba(35, 116, 225, 0.9);
+}
+
+/* Credentials Section */
+.credentials {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 50px;
+    border-top: 6px solid #56300a;
+    border-bottom: 6px solid #50360f;
+}
+
+/* Illustration Glow Effect */
+.illustration img {
+    max-width: 80%;
+    filter: drop-shadow(0px 5px 15px rgba(255, 77, 0, 0.8));
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Credentials Section */
+.credentials {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 50px;
+    color: white;
+}
+
+.credentials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Styling for Credential Items */
+.credential-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.credential-item {
+    width: 180px;
+    text-align: center;
+}
+
+/* Adjusting Image Size to Half */
+.credential-item img {
+    width: 50px;  /* Reducing size */
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 5px 10px rgba(255, 255, 255, 0.5));
+}
+
+
+
+
+.shooting-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('at-twinkle_107791-16480.avif') no-repeat center/cover;
+    animation: shootingStars 6s linear infinite;
+    z-index: -2;
+}
+
+
+
+
+
+
+
+/* Space-Themed Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background: black;
+    overflow: hidden;
+}
